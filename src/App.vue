@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
+@font-face {
+  font-family: "Playfair";
+  src: local("Playfair"),
+   url(./assets/fonts/playfair-display/PlayfairDisplay-Regular.ttf) format("truetype");
+}
+html,
+body{
+  display: flex;
+  justify-content: stretch;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  font-family: "Playfair", Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color:rgba(248, 240, 218, 0.795);
+  background-image: linear-gradient(black, #014d59);
+  background-size: strech;
+}
+h1 {
+  font-size: 3.5rem;
+  margin: 5%;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 2%;
 }
 </style>
