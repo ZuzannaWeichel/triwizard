@@ -5,9 +5,6 @@
         <button v-on:click="redirect">
             <img class="imgLogo" alt="goblet of fire" src="../assets/goblet.png">
         </button>
-        <div class="footer">
-            <p><b>root-</b>some<b>-</b>word<b>-</b>or<b>-</b>words</p>
-        </div>
     </div>
 </template>
 
@@ -33,14 +30,5 @@ export default {
     }
     .imgLogo {
         padding: 30px;
-    }
-    .footer {
-        display: flex;
-    }
-    p {
-        color: black;
-        font-size: 0.8rem;
-        justify-self: start;
-        padding-left: 15%;
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>
-            First Challenge
+            Third Challenge
         </h1>
         <img src="../assets/dragon.png">
         <div>
@@ -9,9 +9,9 @@
             <button id="check-btn" type="submit" v-on:click="solved">Check</button>
             <div v-if="ok" class="padding">
                 <h2>Congrats!</h2>
-                <button id="next-btn" v-on:click="openEgg">
+                <!-- <button id="next-btn" v-on:click="openEgg">
                     <img src="../assets/egg.png" alt="egg">
-                </button>
+                </button> -->
             </div>
             <div v-if="fail">
                 <h2>
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-    name: 'Dragon',
+    name: 'Maze',
     data() {
         return {
             ok: false,
@@ -61,17 +61,15 @@ export default {
     .padding {
         padding: 2rem;
     }
-</style>
-<style>
-   #check-btn {
+    #check-btn {
         margin: 0 10px;
     }
-    #next-btn {
+    #egg-btn {
         background-color: Transparent;
         border: none;
         cursor:pointer;
     }
-    #next-btn:focus {
+    #egg-btn:focus {
         outline:none;
     }
 </style>

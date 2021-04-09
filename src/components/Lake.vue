@@ -9,9 +9,9 @@
             <button id="check-btn" type="submit" v-on:click="solved">Check</button>
             <div v-if="ok">
                 <h2>Congrats!</h2>
-                <!-- <button id="egg-btn" v-on:click="rescueFriend">
-                    <img src="../assets/egg.png" alt="egg">
-                </button> -->
+                <button id="next-btn" v-on:click="rescueFriend">
+                    <img src="../assets/myrtle.png" alt="moaning myrtle">
+                </button>
               
             </div>
             <div v-if="fail">
@@ -27,8 +27,19 @@
 export default {
     name: 'Lake',
     methods: {
+        solved: function(){
+            if (this.phraze === process.env.VUE_APP_KEY_TWO) {
+                this.ok = true;
+                this.fail = false;
+                setTimeout(() => window.scrollTo(0, 600), 10);
+                
+            } else {
+                this.ok = false;
+                this.fail = true;
+            }
+        },
         rescueFriend: function(){
-
+            this.$router.push({ name: 'maze'})
         }
     },
     data() {
@@ -41,7 +52,5 @@ export default {
 </script>
 
 <style scoped>
-    #check-btn {
-        margin: 0 10px;
-    }
+
 </style>
