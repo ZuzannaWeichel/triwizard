@@ -35,7 +35,7 @@ export default {
     },
     methods: {
         solved: function(){
-            if (this.phraze === "root-g0Ld3N-eGg") {
+            if (this.phraze === process.env.VUE_APP_KEY_ONE) {
                 this.ok = true;
                 this.fail = false;
                 setTimeout(() => window.scrollTo(0, 600), 10);
