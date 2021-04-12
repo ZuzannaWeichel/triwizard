@@ -5,6 +5,7 @@ import Dragon from './components/Dragon.vue'
 import Lake from './components/Lake.vue'
 import Maze from './components/Maze.vue'
 import Graveyard from './components/Graveyard.vue'
+import Hall from './components/Hall.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,12 @@ const routes = [
         name: 'graveyard',
         component: Graveyard
     },
+    {
+        path: '/hall',
+        name: 'hall',
+        component: Hall
+    },
+
 
 ]
 
