@@ -38,7 +38,7 @@ export default {
             if (this.phraze === process.env.VUE_APP_KEY_ONE) {
                 this.ok = true;
                 this.fail = false;
-                setTimeout(() => window.scrollTo(0, 600), 10);
+                setTimeout(() => window.scrollTo(0, 800), 10);
                 
             } else {
                 this.ok = false;
