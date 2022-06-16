@@ -33,10 +33,11 @@ body{
   color:rgba(248, 240, 218, 0.795);
   background-image: linear-gradient(black, #014d59);
   background-size: strech;
+  padding-bottom: 2%;
 }
 h1 {
   font-size: 3.5rem;
-  margin: 5%;
+  margin: 3%;
 }
 h2 {
   font-size: 1.5rem;
